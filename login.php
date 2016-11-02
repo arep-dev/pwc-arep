@@ -12,7 +12,7 @@
 	require 'View/login.tpl';
 	
 	if($_SERVER['REQUEST_METHOD'] == "POST") {
-		$username = htmlspecialchars($_POST['user']);
+		$username = htmlspecialchars($_POST['username']);
 		$password = htmlspecialchars($_POST['password']);
 		LoginController::getInstance()->connect($username, $password); 	
 	}
