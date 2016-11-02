@@ -8,7 +8,8 @@
 	// Loader des fichiers essentiels
 	require 'loaderFile.php';
 
-	// require login
+	// On charge la page de login
+	require 'View/login.tpl';
 	
 	if($_SERVER['REQUEST_METHOD'] == "POST") {
 		$username = htmlspecialchars($_POST['user']);
