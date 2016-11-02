@@ -16,6 +16,19 @@ class MyController {
 
 		return $class::$instance;
 	}
+
+	public static function error($error) {
+		switch($error){
+			case 200:
+				$errorMessage = "Vos identifiants sont incorrects";
+				break;
+			default:
+				$errorMessage = "Un erreur inconnue s'est produite";
+				break;	
+		}
+
+		require 'errorMessage.tpl';
+	}
 }
 
 ?>
