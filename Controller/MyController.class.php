@@ -1,7 +1,7 @@
 <?php
 
 class MyController {
-	private static $instance;
+	protected static $instance;
 	public static $bdd;
 
 	public function __construct() {
@@ -11,7 +11,7 @@ class MyController {
 	public static function getInstance() {
 		$class = get_called_class();
 		if($class::$instance == null) {
-			$class::$instance == new $class();
+			$class::$instance = new $class();
 		}
 
 		return $class::$instance;

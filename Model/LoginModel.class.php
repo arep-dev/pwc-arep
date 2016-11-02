@@ -10,8 +10,8 @@
 		public function getByUsername($username){
 			$sql = 'SELECT * FROM users WHERE username = ?';
 			$this->request = MyController::$bdd->prepare($sql);
-			$this->fetching = $this->request->execute(array($username));
-			$user = $this->fetching->fetch(PDO::FETCH_ASSOC);
+			$this->request->execute(array($username));
+			$user = $this->request->fetch(PDO::FETCH_ASSOC);
 
 			if($user['password'] != ''){
 				return $user;
