@@ -1,0 +1,1 @@
+<h2>Message d'erreur : {{ message }}</h2>

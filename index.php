@@ -10,7 +10,7 @@
 	// Check si l'utilisateur est déjà connecté, sinon le renvoi sur la page login
 	require 'security.php';	
 
-	// Check si le cookie de connexion est toujours présent
+	// Check si le cookie de connexion est toujours présent sinon deconnecte l'utilisateur
 	require 'cookie.php';
 
 	

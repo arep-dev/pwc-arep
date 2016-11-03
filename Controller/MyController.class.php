@@ -27,7 +27,11 @@ class MyController {
 				break;	
 		}
 
-		require 'errorMessage.tpl';
+		require 'loaderTwig.php';
+
+		echo $twig->render('errorMessage.tpl', array(
+			'message' => $errorMessage
+    	));
 	}
 }
 

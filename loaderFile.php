@@ -1,4 +1,6 @@
 <?php
+	// Twig 
+	require 'loaderTwig.php';
 	// Controller
 	require 'Controller/MyController.class.php';
 	require 'Controller/LoginController.class.php';

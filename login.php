@@ -9,8 +9,10 @@
 	require 'loaderFile.php';
 
 	// On charge la page de login
-	require 'View/login.tpl';
-	
+	echo $twig->render('login.tpl', array(
+		
+    ));
+
 	if($_SERVER['REQUEST_METHOD'] == "POST") {
 		$username = htmlspecialchars($_POST['username']);
 		$password = htmlspecialchars($_POST['password']);
