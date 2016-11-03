@@ -13,5 +13,10 @@
 	// Check si le cookie de connexion est toujours présent sinon deconnecte l'utilisateur
 	require 'cookie.php';
 
-	
+	if(isset($_GET['action'])) {
+
+	}else{
+		echo $twig->render('index.tpl', array(
+    	));
+	}	
 ?>

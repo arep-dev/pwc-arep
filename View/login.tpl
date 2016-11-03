@@ -1,8 +1,13 @@
 {% extends "base.tpl" %}
-{% block body %}
+{% block header %}
+<div id="header">
+	<img src="img/header.jpg">
+</div>
+{% endblock %}
+{% block content %}
 	<form method="post" action="login">
-		<input type="text" name="username"><br>
-		<input type="text" name="password"><br>
-		<input type="submit" value="go">
+		<p><input type="text" name="username" placeholder="Identifiant"></p>
+		<p><input type="password" name="password" placeholder="Mot de passe"></p>
+		<p id="btn"><input type="submit" value="Connexion"></p>
 	</form>
 {% endblock %}
